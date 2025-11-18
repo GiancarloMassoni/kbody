@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kaitlin Brubaker",
-  description: "Kaitlin Brubaker Fitness and Nutrition",
+  title: "Kate Brubaker",
+  description: "Kate Brubaker Fitness and Nutrition",
 };
 
 export default function RootLayout({
