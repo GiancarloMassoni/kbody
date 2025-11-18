@@ -132,7 +132,7 @@ function BelowTheFold() {
             I host private events that combine wellness and fitness, offering
             personalized Mat Pilates and Hot Yoga Sculpt sessions. Perfect for
             small groups, team-building, or special gatherings, each session is
-            tailored to your group's energy and goals.
+            tailored to your group&apos;s energy and goals.
           </p>
           <div className="mt-6 flex justify-center">
             <Link
@@ -156,7 +156,7 @@ function BelowTheFold() {
             </div>
           </div>
           <p className="text-textSecondary leading-relaxed flex-1 px-2">
-            I create personalized meal plans tailored to each individual's
+            I create personalized meal plans tailored to each individual&apos;s
             goals, preferences, and lifestyle. No two plans are the same; every
             plan is unique to help you eat well, feel your best, and achieve
             results that work for you.
