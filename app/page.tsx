@@ -19,9 +19,33 @@ import Link from "next/link";
 function AboveTheFold() {
   return (
     <div className="bg-secondary font-body text-textPrimary">
-      <div className="relative px-2 pt-14 lg:px-8">
-        <div className="mx-auto max-w-7xl  grid grid-cols-1 lg:grid-cols-2">
-          <div className="text-center lg:py-32 pt-32 pb-4 sm:py-48 ">
+      <div className="relative px-2 pt-14 lg:px-8  w-full bg-linear-to-r from-primary via-secondary to-secondary">
+        <svg
+          className="absolute top-35 inset-0 w-full h-full "
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <linearGradient
+              id="diagonalGradient"
+              x1="0%"
+              y1="100%"
+              x2="100%"
+              y2="0%"
+            >
+              <stop offset="0%" stopColor="#ffff" />
+              <stop offset="50%" stopColor="#ffff" />
+              <stop offset="100%" stopColor="#ffff" />
+            </linearGradient>
+          </defs>
+          <path
+            fill="url(#diagonalGradient)"
+            fill-opacity="1"
+            d="M0,320 L0,160 C360,80 1080,240 1440,0 L1440,320 Z"
+          ></path>
+        </svg>
+        <div className="mx-auto max-w-7xl  grid grid-cols-1 lg:grid-cols-2 ">
+          <div className="text-center lg:py-32 pt-12 pb-4 sm:py-48 z-10">
             <h1 className="text-5xl tracking-tight text-balance text-textPrimary sm:text-7xl font-heading ">
               Move with Intention. <br /> Nourish with Purpose.
             </h1>
@@ -43,7 +67,7 @@ function AboveTheFold() {
               />
             </div>
           </div>
-          <div className="lg:py-10 pb-5 flex justify-center items-center">
+          <div className="lg:py-10 pb-5 flex justify-center items-center z-5">
             <Image
               src={kateheader}
               alt={""}
@@ -60,67 +84,92 @@ function AboveTheFold() {
 
 function BelowTheFold() {
   return (
-    <div className="bg-primary font-body text-textPrimary">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8 py-12 items-stretch">
-        <div className="bg-secondary rounded-2xl p-6 flex flex-col justify-between items-center shadow-2xl">
-          <div className="flex flex-col items-center flex-1">
-            <h3 className="text-2xl font-heading mb-4">Class Schedule</h3>
-            <div className="h-[90px] flex items-center justify-center mb-4">
-              <Image src={calendar} alt="" height={90} width={120} />
+    <div className="bg-secondary font-body text-textPrimary relative">
+      {/* <div className="absolute inset-0  top-0 bg-linear-to-r from-primary via-secondary to-primary "></div> */}
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        {/* Card 1 */}
+        <div className="flex flex-col bg-secondary  p-6 ">
+          <div className="grid grid-cols-3 mb-4 items-center">
+            <div className="flex justify-center">
+              <Image src={calendar} alt="Calendar" height={50} width={70} />
             </div>
-            <p className="text-textSecondary leading-relaxed px-2">
-              Build strength and balance with weekly Mat Pilates and Yoga Sculpt
-              classes. Check the schedule to join a session and move, tone, and
-              feel your best.
-            </p>
-          </div>
-          <Link
-            href="#schedule"
-            className="mt-6 bg-primary text-light px-6 py-3 rounded-full font-body font-medium hover:bg-accent transition"
-          >
-            Learn More
-          </Link>
-        </div>
-        <div className="bg-secondary rounded-2xl p-6 flex flex-col justify-between items-center shadow-2xl">
-          <div className="flex flex-col items-center flex-1">
-            <h3 className="text-2xl font-heading mb-4">Private Events</h3>
-            <div className="h-[90px] flex items-center justify-center mb-4">
-              <Image src={yogalates} alt="" height={75} />
+            <div className="col-span-2">
+              <h3 className="text-2xl font-heading mb-2">Class Schedule</h3>
             </div>
-            <p className="text-textSecondary leading-relaxed px-2">
-              I host private events that combine wellness and fitness, offering
-              personalized Mat Pilates and Hot Yoga Sculpt sessions. Perfect for
-              small groups, team-building, or special gatherings, each session
-              is tailored to your group&apos;s energy and goals.
-            </p>
           </div>
-          <Link
-            href="/events"
-            className="mt-6 bg-primary text-light px-6 py-3 rounded-full font-body font-medium hover:bg-accent transition"
-          >
-            Learn More
-          </Link>
+          <p className="text-textSecondary leading-relaxed flex-1 px-2">
+            Build strength and balance with weekly Mat Pilates and Yoga Sculpt
+            classes. Check the schedule to join a session and move, tone, and
+            feel your best.
+          </p>
+          <div className="mt-6 flex justify-center">
+            <Link
+              href="#schedule"
+              className="bg-primary text-light px-6 py-3 rounded-full font-body font-medium hover:bg-accent transition"
+            >
+              Learn More
+            </Link>
+          </div>
+          <hr className="mt-10" />
         </div>
 
-        <div className="bg-secondary rounded-2xl p-6 flex flex-col justify-between items-center shadow-2xl">
-          <div className="flex flex-col items-center flex-1">
-            <h3 className="text-2xl font-heading mb-4">Meal Plans</h3>
-            <div className="h-[90px] flex items-center justify-center mb-4">
-              <Image src={meal} alt="" width={150} height={90} />
+        {/* Card 2 */}
+        <div className="flex flex-col bg-secondary  p-6 ">
+          <div className="grid grid-cols-3 mb-4 items-center">
+            <div className="flex justify-center">
+              <Image
+                src={yogalates}
+                alt="Private Events"
+                height={55}
+                width={100}
+              />
             </div>
-            <p className="text-textSecondary leading-relaxed px-2">
-              I create personalized meal plans tailored to each
-              individual&apos;s goals, preferences, and lifestyle. No two plans
-              are the same, every plan is unique to help you eat well, feel your
-              best, and achieve results that work for you.
-            </p>
+            <div className="col-span-2">
+              <h3 className="text-2xl font-heading mb-2">Private Events</h3>
+            </div>
           </div>
-          <Link
-            href="/mealplans"
-            className="mt-6 bg-primary text-light px-6 py-3 rounded-full font-body font-medium hover:bg-accent transition"
-          >
-            Learn More
-          </Link>
+          <p className="text-textSecondary leading-relaxed flex-1 px-2">
+            I host private events that combine wellness and fitness, offering
+            personalized Mat Pilates and Hot Yoga Sculpt sessions. Perfect for
+            small groups, team-building, or special gatherings, each session is
+            tailored to your group's energy and goals.
+          </p>
+          <div className="mt-6 flex justify-center">
+            <Link
+              href="/events"
+              className="bg-primary text-light px-6 py-3 rounded-full font-body font-medium hover:bg-accent transition"
+            >
+              Learn More
+            </Link>
+          </div>
+          <hr className="mt-10" />
+        </div>
+
+        {/* Card 3 */}
+        <div className="flex flex-col bg-secondary  p-6 ">
+          <div className="grid grid-cols-3 mb-4 items-center">
+            <div className="flex justify-center">
+              <Image src={meal} alt="Meal Plans" height={70} width={80} />
+            </div>
+            <div className="col-span-2">
+              <h3 className="text-2xl font-heading mb-2">Meal Plans</h3>
+            </div>
+          </div>
+          <p className="text-textSecondary leading-relaxed flex-1 px-2">
+            I create personalized meal plans tailored to each individual's
+            goals, preferences, and lifestyle. No two plans are the same; every
+            plan is unique to help you eat well, feel your best, and achieve
+            results that work for you.
+          </p>
+          <div className="mt-6 flex justify-center">
+            <Link
+              href="/mealplans"
+              className="bg-primary text-light px-6 py-3 rounded-full font-body font-medium hover:bg-accent transition"
+            >
+              Learn More
+            </Link>
+          </div>
+          <hr className="mt-10" />
         </div>
       </div>
     </div>
@@ -130,8 +179,8 @@ function BelowTheFold() {
 function AboutMe() {
   return (
     <section id="aboutme">
-      <div className="bg-secondary font-body text-textPrimary relative py-10 z-1">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+      <div className="bg-secondary font-body text-textPrimary relative py-10 z-5">
+        <div className="max-w-7xl mx-3 lg:mx-auto px-6 lg:px-8 relative shadow-2xl rounded-2xl py-5 ">
           {/* IMAGE WRAPPER */}
           <div className="relative flex justify-center">
             {/* MAIN LARGE IMAGE (same as your original but responsive) */}
@@ -141,7 +190,7 @@ function AboutMe() {
               className="
               z-1 
               rounded-b-2xl 
-              h-[300px] 
+              h-[250px] 
               md:h-[650px] 
               w-auto
             "
@@ -151,13 +200,16 @@ function AboutMe() {
             <Image
               src={katepose}
               alt="Pose"
-              height={260}
+              // height={260}
               className="
+              w-auto
+              h-[200px]
+              md:h-[260px]
               absolute 
               z-2 
               rounded-2xl
-              -bottom-40 
-              left-30 
+              -bottom-45 
+              left-25 
               -translate-x-1/2
 
               md:-bottom-40 
