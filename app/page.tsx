@@ -237,14 +237,14 @@ function AboutMe() {
                 <br /> Whether you&apos;re looking to join a class, host a
                 private event, or need guidance on nutrition, I&apos;m here to
                 help you achieve your wellness goals. Let&apos;s move with
-                intention and nourish with purpose together!
+                intention and move with purpose together!
               </p>
             </div>
-            <div className="bg-[#F3E8DA] rounded-l-2xl p-6 justify-center items-center shadow-2xl">
+            <div className="bg-[#F3E8DA] rounded-l-2xl p-6 justify-center items-center shadow-2xl h-[150px] lg:mt-10">
               <h3 className="font-heading text-textPrimary text-2xl mb-4 text-center">
                 Gyms You Can Find Me At
               </h3>
-              <div className="grid grid-cols-2 gap-10 justify-center items-center pt-2">
+              <div className="grid grid-cols-3 gap-0 justify-center items-center pt-2">
                 <div className="items-center flex justify-center">
                   <Image src={yoga6} width={100} height={100} alt={""}></Image>
                 </div>
@@ -256,14 +256,7 @@ function AboutMe() {
                     alt={""}
                   ></Image>
                 </div>
-                <div className="items-center flex justify-center">
-                  <Image
-                    src={sculptstudios}
-                    width={100}
-                    height={100}
-                    alt={""}
-                  ></Image>
-                </div>
+                
                 <div className="items-center flex justify-center">
                   <Image
                     src={class46}
