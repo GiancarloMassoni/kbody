@@ -40,17 +40,19 @@ function AboveTheFold() {
           </defs>
           <path
             fill="url(#diagonalGradient)"
-            fill-opacity="1"
+            fillOpacity="1"
             d="M0,320 L0,160 C360,80 1080,240 1440,0 L1440,320 Z"
           ></path>
         </svg>
         <div className="mx-auto max-w-7xl  grid grid-cols-1 lg:grid-cols-2 ">
           <div className="text-center lg:py-32 pt-12 pb-4 sm:py-48 z-10">
             <h1 className="text-5xl tracking-tight text-balance text-textPrimary sm:text-7xl font-heading ">
-              Move with Intention. <br /> Nourish with Purpose.
+              Move with Intention. <br />
+              Move with Purpose.
+               {/* Nourish with Purpose. */}
             </h1>
             <p className="mt-8 text-lg font-medium text-textSecondary sm:text-xl/8 ">
-              Private events and personalized meal plans
+              Private events and group classes
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -86,12 +88,12 @@ function BelowTheFold() {
   return (
     <div className="bg-secondary font-body text-textPrimary relative">
       {/* <div className="absolute inset-0  top-0 bg-linear-to-r from-primary via-secondary to-primary "></div> */}
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
         {/* Card 1 */}
         <div className="flex flex-col bg-secondary  p-6 ">
           <div className="grid grid-cols-3 mb-4 items-center">
             <div className="flex justify-center">
-              <Image src={calendar} alt="Calendar" height={50} width={70} />
+              <Image src={calendar} alt="Calendar" height={50} width={70} loading="lazy" />
             </div>
             <div className="col-span-2">
               <h3 className="text-2xl font-heading mb-2">Class Schedule</h3>
@@ -146,7 +148,7 @@ function BelowTheFold() {
         </div>
 
         {/* Card 3 */}
-        <div className="flex flex-col bg-secondary  p-6 ">
+        {/* <div className="flex flex-col bg-secondary  p-6 ">
           <div className="grid grid-cols-3 mb-4 items-center">
             <div className="flex justify-center">
               <Image src={meal} alt="Meal Plans" height={70} width={80} />
@@ -170,7 +172,7 @@ function BelowTheFold() {
             </Link>
           </div>
           <hr className="mt-10" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

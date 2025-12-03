@@ -11,7 +11,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Events", href: "/events" },
   { name: "Class Schedule", href: "/#schedule" },
-  { name: "Meal Plans", href: "/mealplans" },
+  // { name: "Meal Plans", href: "/mealplans" },
   { name: "About Me", href: "/#aboutme" },
 ];
 

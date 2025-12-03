@@ -5,7 +5,7 @@ import kbLogo from "@/public/kblogo.png";
 const navigation = [
   { name: "Events", href: "/events" },
   { name: "Class Schedule", href: "/#schedule" },
-  { name: "Meal Plans", href: "/mealplans" },
+  // { name: "Meal Plans", href: "/mealplans" },
   { name: "About Me", href: "/#aboutme" },
 ];
 
