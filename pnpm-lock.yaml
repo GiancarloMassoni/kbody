@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      .pnpm-lock.yaml:
+        specifier: link:.pnpm-lock.yaml
+        version: link:.pnpm-lock.yaml
       '@headlessui/react':
         specifier: ^2.2.9
         version: 2.2.9(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
