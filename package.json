@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    ".pnpm-lock.yaml": "link:.pnpm-lock.yaml",
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
     "@radix-ui/react-icons": "^1.3.2",
