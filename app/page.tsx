@@ -49,7 +49,7 @@ function AboveTheFold() {
             <h1 className="text-5xl tracking-tight text-balance text-textPrimary sm:text-7xl font-heading ">
               Move with Intention. <br />
               Move with Purpose.
-               {/* Nourish with Purpose. */}
+              {/* Nourish with Purpose. */}
             </h1>
             <p className="mt-8 text-lg font-medium text-textSecondary sm:text-xl/8 ">
               Private events and group classes
@@ -93,7 +93,13 @@ function BelowTheFold() {
         <div className="flex flex-col bg-secondary  p-6 ">
           <div className="grid grid-cols-3 mb-4 items-center">
             <div className="flex justify-center">
-              <Image src={calendar} alt="Calendar" height={50} width={70} loading="lazy" />
+              <Image
+                src={calendar}
+                alt="Calendar"
+                height={50}
+                width={70}
+                loading="lazy"
+              />
             </div>
             <div className="col-span-2">
               <h3 className="text-2xl font-heading mb-2">Class Schedule</h3>
@@ -256,7 +262,7 @@ function AboutMe() {
                     alt={""}
                   ></Image>
                 </div>
-                
+
                 <div className="items-center flex justify-center">
                   <Image
                     src={class46}
