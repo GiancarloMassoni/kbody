@@ -12,9 +12,9 @@ export default function MealPlansPage() {
           Personalized Meal Plans
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto font-body">
-          Every plan is tailored to your goals, preferences, and lifestyle. Whether
-          you’re building strength, losing weight, or boosting energy, we create the
-          perfect plan for you.
+          Every plan is tailored to your goals, preferences, and lifestyle.
+          Whether you’re building strength, losing weight, or boosting energy,
+          we create the perfect plan for you.
         </p>
       </section>
 
@@ -25,7 +25,9 @@ export default function MealPlansPage() {
           <p>We discuss your goals, dietary preferences, and schedule.</p>
         </div>
         <div className="bg-light p-6 rounded-2xl shadow-lg text-center">
-          <h3 className="text-xl font-semibold mb-2">Step 2: Customized Plan</h3>
+          <h3 className="text-xl font-semibold mb-2">
+            Step 2: Customized Plan
+          </h3>
           <p>Receive a meal plan designed specifically for your needs.</p>
         </div>
         <div className="bg-light p-6 rounded-2xl shadow-lg text-center">
@@ -45,7 +47,9 @@ export default function MealPlansPage() {
               className="w-full h-78 object-cover"
             />
             <div className="p-4">
-              <h3 className="font-semibold text-lg mb-1">Protein Pancakes with PB Drizzle</h3>
+              <h3 className="font-semibold text-lg mb-1">
+                Protein Pancakes with PB Drizzle
+              </h3>
               <p>Protein-packed, fresh vegetables, and healthy fats.</p>
             </div>
           </div>
@@ -56,7 +60,9 @@ export default function MealPlansPage() {
               className="w-full h-78 object-cover"
             />
             <div className="p-4">
-              <h3 className="font-semibold text-lg mb-1">Beef, Avocado, Sweet potato and Cottage Cheese Bowl</h3>
+              <h3 className="font-semibold text-lg mb-1">
+                Beef, Avocado, Sweet potato and Cottage Cheese Bowl
+              </h3>
               <p>High-fiber, nutrient-dense meal option.</p>
             </div>
           </div>
@@ -67,7 +73,9 @@ export default function MealPlansPage() {
               className="w-full h-78 object-cover"
             />
             <div className="p-4">
-              <h3 className="font-semibold text-lg mb-1">Chicken Lettuce Wrap</h3>
+              <h3 className="font-semibold text-lg mb-1">
+                Chicken Lettuce Wrap
+              </h3>
               <p>High protein, quick, and delicious.</p>
             </div>
           </div>
@@ -80,7 +88,12 @@ export default function MealPlansPage() {
         <p className="mb-6 max-w-xl mx-auto">
           Click below to contact me and get a meal plan tailored just for you!
         </p>
-        <ContactModal style={"inline-block bg-primary text-white px-6 py-2 rounded-full hover:opacity-80 transition"} text={"Inquire Here"} meals/>
+        <ContactModal
+          style={
+            "inline-block bg-primary text-white px-6 py-2 rounded-full hover:opacity-80 transition"
+          }
+          text={"Inquire Here"}
+        />
       </section>
     </main>
   );

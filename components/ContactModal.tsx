@@ -3,10 +3,9 @@ import { useState } from "react";
 import { text } from "stream/consumers";
 
 type ContactModalProps = {
-    style : string;
-    text : string;
-    meals?: boolean;
-}; 
+  style: string;
+  text: string;
+};
 
 export default function ContactModal(contactModalProps: ContactModalProps) {
   const [open, setOpen] = useState(false);
@@ -14,10 +13,7 @@ export default function ContactModal(contactModalProps: ContactModalProps) {
   return (
     <>
       {/* Contact Button */}
-      <button
-        onClick={() => setOpen(true)}
-        className={contactModalProps.style}
-      >
+      <button onClick={() => setOpen(true)} className={contactModalProps.style}>
         {contactModalProps.text}
       </button>
 
@@ -42,35 +38,38 @@ export default function ContactModal(contactModalProps: ContactModalProps) {
             <h2 className="text-2xl mb-4 font-heading">Contact Me</h2>
 
             <form
-              action="https://formsubmit.co/massonicarlo55@gmail.com"
+              action="https://formsubmit.co/kaitlinbrubaker50@gmail.com"
               method="POST"
               className="space-y-4"
             >
               {/* FormSubmit options */}
+              <input
+                type="hidden"
+                name="_next"
+                value="https://www.katebrubaker.com/thankyou"
+              ></input>
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm text-left">First Name</label>
-                <input
-                  type="text"
-                  name="fname"
-                  required
-                  className="w-full p-2 border-gray-300 border rounded-lg"
-                />
-                
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm text-left">First Name</label>
+                  <input
+                    type="text"
+                    name="fname"
+                    required
+                    className="w-full p-2 border-gray-300 border rounded-lg"
+                  />
+                </div>
+                <div className="inline">
+                  <label className="block text-sm text-left">Last Name</label>
+                  <input
+                    type="text"
+                    name="lname"
+                    required
+                    className="w-full p-2 border-gray-300 border rounded-lg"
+                  />
+                </div>
               </div>
-              <div className="inline">
-                <label className="block text-sm text-left">Last Name</label>
-                <input
-                  type="text"
-                  name="lname"
-                  required
-                  className="w-full p-2 border-gray-300 border rounded-lg"
-                />
-              </div>
-            </div>
-              
 
               <div>
                 <label className="block text-sm text-left">Email</label>
@@ -84,27 +83,15 @@ export default function ContactModal(contactModalProps: ContactModalProps) {
 
               <div>
                 <label className="block text-sm text-left">Inquiry Type</label>
-                <select name="inquiry" id="" className="w-full p-2 border-gray-300 border rounded-lg">
-                  {contactModalProps.meals ? (
-                    <>
-                     <option value="Meal Plan">Meal Plan</option>
-                    <option value="Private Event">Private Event</option>
-                    <option value="Classes">Classes</option>
-                    <option value="Other">Other</option>
-                    </>
-                   
-                  ) :
-                  <>
+                <select
+                  name="inquiry"
+                  id=""
+                  className="w-full p-2 border-gray-300 border rounded-lg"
+                >
                   <option value="Private Event">Private Event</option>
-                   <option value="Meal Plan">Meal Plan</option>
-                   <option value="Classes">Classes</option>
-                    <option value="Other">Other</option>
-                  </>
-                  
-                  }
-                  
+                  <option value="Classes">Classes</option>
+                  <option value="Other">Other</option>
                 </select>
-               
               </div>
 
               <div>

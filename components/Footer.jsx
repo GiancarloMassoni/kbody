@@ -11,7 +11,7 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-textPrimary font-body">
+    <footer className="bg-secondary text-textPrimary font-body h-auto">
       <div className="max-w-7xl mx-auto px-6 py-12 md:flex md:justify-between md:items-start">
         {/* Logo */}
         <div className="mb-8 md:mb-0 flex flex-col items-start">
@@ -20,7 +20,7 @@ export default function Footer() {
             <Image src={kbLogo} alt="KBody Logo" className="h-10 w-auto" />
           </Link>
           <p className="mt-4 max-w-xs text-sm">
-            Move with Intention. Nourish with Purpose.
+            Move with Intention. Move with Purpose.
           </p>
         </div>
 
@@ -67,7 +67,8 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="#"
+              href="	
+https://www.tiktok.com/@kateeeeee5678?_r=1&_t=ZT-925ZTyUEAkx"
               className="hover:text-primary"
               target="_blank"
               rel="noopener noreferrer"
