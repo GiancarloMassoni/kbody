@@ -13,7 +13,7 @@ export default function ThankYouPage() {
           </p>
           <p className="text-lg md:text-xl py-8  mx-6 leading-8 text-center">
             In the meantime, you can learn more about me by returning to the{" "}
-            <Link href="/" className="text-textSecondary">
+            <Link href="/" className="text-blue-600 underline">
               homepage
             </Link>
             .
