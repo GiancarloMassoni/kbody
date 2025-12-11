@@ -45,6 +45,12 @@ export default function ContactModal(contactModalProps: ContactModalProps) {
               {/* FormSubmit options */}
               <input
                 type="hidden"
+                name="_cc"
+                value="massonicarlo55@gmail.com"
+              />
+
+              <input
+                type="hidden"
                 name="_next"
                 value="https://www.katebrubaker.com/thankyou"
               ></input>
