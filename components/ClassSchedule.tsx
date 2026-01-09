@@ -21,12 +21,43 @@ export default function ClassSchedule() {
       link: "https://www.class46yoga.com/schedule-book?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717",
       location: " 5565 E Santa Ana Canyon Rd, Anaheim, CA 92807",
     },
-
+    {
+      day: "Monday",
+      time: "5:30 PM",
+      class: "Sculpt",
+      studio: "The Sculpted Space",
+      link: "https://app.arketa.co/iframe/thesculptedspace/schedule",
+      location: "1111 W Town and Country Rd STE 10, Orange, CA 92868",
+    },
+    {
+      day: "Monday",
+      time: "6:30 PM",
+      class: "Sculpt",
+      studio: "The Sculpted Space",
+      link: "https://app.arketa.co/iframe/thesculptedspace/schedule",
+      location: "1111 W Town and Country Rd STE 10, Orange, CA 92868",
+    },
+    {
+      day: "Monday",
+      time: "7:30 PM",
+      class: "Sculpt",
+      studio: "The Sculpted Space",
+      link: "https://app.arketa.co/iframe/thesculptedspace/schedule",
+      location: "1111 W Town and Country Rd STE 10, Orange, CA 92868",
+    },
+    {
+      day: "Tuesday",
+      time: "6:00 AM",
+      class: "Warrior Sculpt",
+      studio: "Life Time",
+      link: "https://www.lifetime.life/locations/ca/lakeshore-irvine/classes/signature-group-training.html",
+      location: "18007 Von Karman Ave. Irvine, California 92612 ",
+    },
     {
       day: "Tuesday",
       time: "8:30 AM",
       class: "Sculpt",
-      studio: "Sculpted Space",
+      studio: "The Sculpted Space",
       link: "https://app.arketa.co/iframe/thesculptedspace/schedule",
       location: "1111 W Town and Country Rd STE 10, Orange, CA 92868",
     },
@@ -34,7 +65,7 @@ export default function ClassSchedule() {
       day: "Tuesday",
       time: "9:30 AM",
       class: "Sculpt",
-      studio: "Sculpted Space",
+      studio: "The Sculpted Space",
       link: "https://app.arketa.co/iframe/thesculptedspace/schedule",
       location: "1111 W Town and Country Rd STE 10, Orange, CA 92868",
     },
@@ -42,7 +73,7 @@ export default function ClassSchedule() {
       day: "Tuesday",
       time: "10:30 AM",
       class: "Sculpt",
-      studio: "Sculpted Space",
+      studio: "The Sculpted Space",
       link: "https://app.arketa.co/iframe/thesculptedspace/schedule",
       location: "1111 W Town and Country Rd STE 10, Orange, CA 92868",
     },
@@ -54,7 +85,14 @@ export default function ClassSchedule() {
       link: "https://www.class46yoga.com/schedule-book?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717",
       location: " 5565 E Santa Ana Canyon Rd, Anaheim, CA 92807",
     },
-
+    {
+      day: "Wednesday",
+      time: "12:00 PM",
+      class: "Yogalates",
+      studio: "Yoga Six",
+      link: "https://lp.yogasix.com/try?amp_device_id=IZNPu9m4THPgtZgUYsNMxe",
+      location: " 4889 Valencia Ave., Yorba Linda, CA 92886",
+    },
     {
       day: "Wednesday",
       time: "4:30 PM",
@@ -71,7 +109,14 @@ export default function ClassSchedule() {
       link: "https://www.class46yoga.com/schedule-book?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717",
       location: " 5565 E Santa Ana Canyon Rd, Anaheim, CA 92807",
     },
-
+    {
+      day: "Thursday",
+      time: "6:00 AM",
+      class: "Warrior Sculpt",
+      studio: "Life Time",
+      link: "https://www.lifetime.life/locations/ca/lakeshore-irvine/classes/signature-group-training.html",
+      location: "18007 Von Karman Ave. Irvine, California 92612 ",
+    },
     {
       day: "Thursday",
       time: "12:00 PM",
@@ -92,8 +137,9 @@ export default function ClassSchedule() {
   // Studio color accents
   const studioColors: Record<string, string> = {
     "Class 46": "#C58A7A", // warm rose
-    "Sculpt Studios": "#D9B5A0", // beige rose
-    "Sculpted Space": "#E8D7C5", // soft cream
+    "Yoga Six": "#D9B5A0", // beige rose
+    "The Sculpted Space": "#D3D3D3", // light gray
+    "Life Time": "#E8D7C5", // soft cream
   };
 
   const filteredClasses =
@@ -199,18 +245,25 @@ export default function ClassSchedule() {
                       <p className="font-medium text-textPrimary">
                         {cls.class}
                       </p>
-                      <div className="flex items-center gap-2 text-textSecondary text-sm">
-                        <span>{cls.time}</span>
-                        <span className="flex items-center gap-1">
-                          <span
-                            className="inline-block w-2.5 h-2.5 rounded-full"
-                            style={{
-                              backgroundColor: studioColors[cls.studio],
-                            }}
-                          ></span>
-                          {cls.studio}
-                        </span>
-                        <span className="text-xs">{cls.location}</span>
+                      <div className="grid grid-cols-1 gap-0 text-textSecondary text-sm">
+                        <div className="flex justify-center items-center w-full gap-2 text-center mb-1">
+                          <span className="text-base">{cls.time}</span>
+                          <div>
+                            <span
+                              className="inline-block w-2.5 h-2.5 rounded-full mt-1 shrink-0"
+                              style={{
+                                backgroundColor: studioColors[cls.studio],
+                              }}
+                            ></span>
+                          </div>
+
+                          <span className="text-base">{cls.studio}</span>
+                        </div>
+                        <div className="">
+                          <span className="text-xs sm:flex-1">
+                            {cls.location}
+                          </span>
+                        </div>
                       </div>
                       <a
                         href={cls.link}

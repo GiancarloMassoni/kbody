@@ -14,6 +14,7 @@ import sculptstudios from "@/public/sculptstudioslogo.png";
 import yoga6 from "@/public/yoga6logo.webp";
 import class46 from "@/public/class46logo.webp";
 import sculptedspace from "@/public/sculptedspace.jpeg";
+import lifetimelogo from "@/public/lifetime-logo.png";
 import Link from "next/link";
 
 function AboveTheFold() {
@@ -106,9 +107,9 @@ function BelowTheFold() {
             </div>
           </div>
           <p className="text-textSecondary leading-relaxed flex-1 px-2">
-            Build strength and balance with weekly Mat Pilates and Yoga Sculpt
-            classes. Check the schedule to join a session and move, tone, and
-            feel your best.
+            Build strength and balance with weekly Mat Pilates, Spin and Yoga
+            Sculpt classes. Check the schedule to join a session and move, tone,
+            and feel your best.
           </p>
           <div className="mt-6 flex justify-center">
             <Link
@@ -152,33 +153,6 @@ function BelowTheFold() {
           </div>
           <hr className="mt-10" />
         </div>
-
-        {/* Card 3 */}
-        {/* <div className="flex flex-col bg-secondary  p-6 ">
-          <div className="grid grid-cols-3 mb-4 items-center">
-            <div className="flex justify-center">
-              <Image src={meal} alt="Meal Plans" height={70} width={80} />
-            </div>
-            <div className="col-span-2">
-              <h3 className="text-2xl font-heading mb-2">Meal Plans</h3>
-            </div>
-          </div>
-          <p className="text-textSecondary leading-relaxed flex-1 px-2">
-            I create personalized meal plans tailored to each individual&apos;s
-            goals, preferences, and lifestyle. No two plans are the same; every
-            plan is unique to help you eat well, feel your best, and achieve
-            results that work for you.
-          </p>
-          <div className="mt-6 flex justify-center">
-            <Link
-              href="/mealplans"
-              className="bg-primary text-light px-6 py-3 rounded-full font-body font-medium hover:bg-accent transition"
-            >
-              Learn More
-            </Link>
-          </div>
-          <hr className="mt-10" />
-        </div> */}
       </div>
     </div>
   );
@@ -189,9 +163,7 @@ function AboutMe() {
     <section id="aboutme">
       <div className="bg-secondary font-body text-textPrimary relative py-10 z-5">
         <div className="max-w-7xl mx-3 lg:mx-auto px-6 lg:px-8 relative shadow-2xl rounded-2xl py-5 ">
-          {/* IMAGE WRAPPER */}
           <div className="relative flex justify-center">
-            {/* MAIN LARGE IMAGE (same as your original but responsive) */}
             <Image
               src={kateballpose}
               alt="Workout pose background"
@@ -204,7 +176,6 @@ function AboutMe() {
             "
             />
 
-            {/* SMALL OVERLAY IMAGE (same concept, responsive offset) */}
             <Image
               src={katepose}
               alt="Pose"
@@ -238,12 +209,11 @@ function AboutMe() {
               <p className="text-textPrimary text-left max-w-3xl mx-auto leading-8">
                 Hi, I&apos;m Kate! I specialize in Mat Pilates and Hot Yoga
                 Sculpt, helping clients build strength, flexibility, and
-                balance. I also create personalized meal plans to support your
-                fitness journey.
-                <br /> Whether you&apos;re looking to join a class, host a
-                private event, or need guidance on nutrition, I&apos;m here to
-                help you achieve your wellness goals. Let&apos;s move with
-                intention and nourish with purpose together!
+                balance.
+                <br /> Whether you&apos;re looking to join a class, or host a
+                private event, I&apos;m here to help you achieve your wellness
+                goals. Let&apos;s move with intention and move with purpose
+                together!
               </p>
             </div>
             <div className="bg-[#F3E8DA] rounded-l-2xl p-6 justify-center items-center shadow-2xl">
@@ -265,6 +235,14 @@ function AboutMe() {
                 <div className="items-center flex justify-center">
                   <Image
                     src={class46}
+                    width={100}
+                    height={100}
+                    alt={""}
+                  ></Image>
+                </div>
+                <div className="items-center flex justify-center">
+                  <Image
+                    src={lifetimelogo}
                     width={100}
                     height={100}
                     alt={""}
