@@ -210,7 +210,7 @@ export default function ClassSchedule() {
       </svg>
       <div className="max-w-4xl mx-auto text-center relative">
         {/* <div className="absolute -inset-40 -top-10 rounded-2xl bg-linear-to-r from-primary via-secondary to-white rounded-b-2xl"></div> */}
-        <div className="relative z-10">
+        <div className="relative z-4">
           <h2 className="text-3xl font-heading text-textPrimary mb-2">
             Class Schedule
           </h2>
@@ -312,7 +312,7 @@ export default function ClassSchedule() {
         </div>
 
         {/* Private Sessions */}
-        <div className="mt-10 text-center z-5 relative">
+        <div className="mt-10 text-center z-10 relative">
           <h3 className="text-xl font-heading text-textPrimary mb-2">
             Private Sessions
           </h3>

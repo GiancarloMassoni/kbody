@@ -59,19 +59,19 @@ function AboveTheFold() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#schedule"
-                className=" bg-primary text-light px-6 py-3 rounded-full font-body font-medium hover:bg-accent transition"
+                className=" bg-primary text-light px-6 py-3 z-1 rounded-full font-body font-medium hover:bg-accent transition"
               >
                 Book a Class
               </a>
               <ContactModal
                 style={
-                  "border border-primary text-primary px-6 py-3 rounded-full font-body font-medium hover:bg-primary hover:text-light transition"
+                  "border border-primary text-primary px-6 py-3 z-1 rounded-full font-body font-medium hover:bg-primary hover:text-light transition"
                 }
                 text={"Contact"}
               />
             </div>
           </div>
-          <div className="lg:py-10 pb-5 flex justify-center items-center z-5">
+          <div className="lg:py-10 pb-5 flex justify-center items-center z-1">
             <Image
               src={kateheader}
               alt={""}
