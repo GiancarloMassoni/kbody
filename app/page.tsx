@@ -140,7 +140,7 @@ function BelowTheFold() {
           </div>
           <p className="text-textSecondary leading-relaxed flex-1 px-2">
             I host private events that combine wellness and fitness, offering a
-            variety of heated and non heated sculpt workouts . Perfect for small
+            variety of heated and non heated sculpt workouts. Perfect for small
             groups, team-building, or special gatherings, each session is
             tailored to your group&apos;s energy and goals.
           </p>
@@ -208,7 +208,7 @@ function AboutMe() {
                 About Me
               </h2>
               <p className="text-textPrimary text-left max-w-3xl mx-auto leading-8">
-                Hi, I&apos;m Kate! I specialize in Strength Based Sculpture
+                Hi, I&apos;m Kate! I specialize in Strength Based Sculpt
                 Classes, helping clients build strength, flexibility, and
                 balance.
                 <br /> Whether you&apos;re looking to join a class, or host a

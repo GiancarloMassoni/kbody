@@ -125,6 +125,30 @@ export default function ClassSchedule() {
       link: "https://www.class46yoga.com/schedule-book?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717",
       location: " 5565 E Santa Ana Canyon Rd, Anaheim, CA 92807",
     },
+    {
+      day: "Friday",
+      time: "6:30 AM",
+      class: "Yoga Sculpt & Pilates",
+      studio: "Babe Yoga",
+      link: "https://babe-thestudio.com/book",
+      location: "2675 Irvine Ave suite e, Costa Mesa, CA 92627",
+    },
+    {
+      day: "Friday",
+      time: "7:30 AM",
+      class: "Yoga Sculpt & Pilates",
+      studio: "Babe Yoga",
+      link: "https://babe-thestudio.com/book",
+      location: "2675 Irvine Ave suite e, Costa Mesa, CA 92627",
+    },
+    {
+      day: "Saturday",
+      time: "10:00 AM",
+      class: "Cycle AMP",
+      studio: "Life Time",
+      link: "https://www.lifetime.life/locations/ca/lakeshore-irvine/classes/signature-group-training.html",
+      location: "18007 Von Karman Ave. Irvine, California 92612 ",
+    },
   ];
 
   const [selectedStudio, setSelectedStudio] = useState<string>("All");
@@ -140,6 +164,7 @@ export default function ClassSchedule() {
     "Yoga Six": "#D9B5A0", // beige rose
     "The Sculpted Space": "#D3D3D3", // light gray
     "Life Time": "#E8D7C5", // soft cream
+    "Babe Yoga": "#F3E8DA", // light cream
   };
 
   const filteredClasses =
@@ -236,7 +261,13 @@ export default function ClassSchedule() {
                 <h3 className="text-xl font-heading text-textPrimary mb-4">
                   {day}
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div
+                  className={
+                    dayClasses.length === 1
+                      ? "grid grid-cols-1 gap-4"
+                      : "grid grid-cols-1 md:grid-cols-2 gap-4"
+                  }
+                >
                   {dayClasses.map((cls, idx) => (
                     <div
                       key={idx}
