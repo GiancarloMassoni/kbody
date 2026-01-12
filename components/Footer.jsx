@@ -20,7 +20,7 @@ export default function Footer() {
             <Image src={kbLogo} alt="KBody Logo" className="h-10 w-auto" />
           </Link>
           <p className="mt-4 max-w-xs text-sm">
-            Move with Intention. Move with Purpose.
+            Move with Intention. Nourish with Purpose.
           </p>
         </div>
 
