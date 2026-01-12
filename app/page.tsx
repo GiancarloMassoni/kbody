@@ -15,6 +15,8 @@ import yoga6 from "@/public/yoga6logo.webp";
 import class46 from "@/public/class46logo.webp";
 import sculptedspace from "@/public/sculptedspace.jpeg";
 import lifetimelogo from "@/public/lifetime-logo.png";
+import katespin from "@/public/kate-spin.jpeg";
+import babelogo from "@/public/babe_studio_bubble_gum.png";
 import Link from "next/link";
 
 function AboveTheFold() {
@@ -49,8 +51,7 @@ function AboveTheFold() {
           <div className="text-center lg:py-32 pt-12 pb-4 sm:py-48 z-10">
             <h1 className="text-5xl tracking-tight text-balance text-textPrimary sm:text-7xl font-heading ">
               Move with Intention. <br />
-              Move with Purpose.
-              {/* Nourish with Purpose. */}
+              Nourish with Purpose.
             </h1>
             <p className="mt-8 text-lg font-medium text-textSecondary sm:text-xl/8 ">
               Private events and group classes
@@ -138,9 +139,9 @@ function BelowTheFold() {
             </div>
           </div>
           <p className="text-textSecondary leading-relaxed flex-1 px-2">
-            I host private events that combine wellness and fitness, offering
-            personalized Mat Pilates and Hot Yoga Sculpt sessions. Perfect for
-            small groups, team-building, or special gatherings, each session is
+            I host private events that combine wellness and fitness, offering a
+            variety of heated and non heated sculpt workouts . Perfect for small
+            groups, team-building, or special gatherings, each session is
             tailored to your group&apos;s energy and goals.
           </p>
           <div className="mt-6 flex justify-center">
@@ -177,22 +178,22 @@ function AboutMe() {
             />
 
             <Image
-              src={katepose}
+              src={katespin}
               alt="Pose"
               // height={260}
               className="
               w-auto
-              h-[200px]
+              h-[150px]
               md:h-[260px]
               absolute 
               z-2 
               rounded-2xl
-              -bottom-45 
+              -bottom-35 
               left-25 
               -translate-x-1/2
 
               md:-bottom-40 
-              md:left-[2%]
+              md:left-[1%]
               md:translate-x-0
               
               shadow-lg
@@ -201,29 +202,26 @@ function AboutMe() {
           </div>
           <div className="absolute inset-0 top-75 bg-linear-to-r from-secondary via-primary to-secondary rounded-b-2xl"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 pt-20 mt-40 md:mt-32 px-4 relative pb-16 gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 pt-0 md:pt-20 mt-40 md:mt-32 px-4 relative pb-16 gap-20">
             <div className=" ">
               <h2 className="text-4xl md:text-5xl font-heading mb-4">
                 About Me
               </h2>
               <p className="text-textPrimary text-left max-w-3xl mx-auto leading-8">
-                Hi, I&apos;m Kate! I specialize in Mat Pilates and Hot Yoga
-                Sculpt, helping clients build strength, flexibility, and
+                Hi, I&apos;m Kate! I specialize in Strength Based Sculpture
+                Classes, helping clients build strength, flexibility, and
                 balance.
                 <br /> Whether you&apos;re looking to join a class, or host a
                 private event, I&apos;m here to help you achieve your wellness
-                goals. Let&apos;s move with intention and move with purpose
+                goals. Let&apos;s move with intention and Nourish with purpose
                 together!
               </p>
             </div>
             <div className="bg-[#F3E8DA] rounded-l-2xl p-6 justify-center items-center shadow-2xl">
               <h3 className="font-heading text-textPrimary text-2xl mb-4 text-center">
-                Gyms You Can Find Me At
+                Studios You Can <br className="md:hidden" /> Find Me At
               </h3>
               <div className="grid grid-cols-2 gap-10 justify-center items-center pt-2">
-                <div className="items-center flex justify-center">
-                  <Image src={yoga6} width={100} height={100} alt={""}></Image>
-                </div>
                 <div className="items-center flex justify-center">
                   <Image
                     src={sculptedspace}
@@ -232,6 +230,7 @@ function AboutMe() {
                     alt={""}
                   ></Image>
                 </div>
+
                 <div className="items-center flex justify-center">
                   <Image
                     src={class46}
@@ -240,9 +239,22 @@ function AboutMe() {
                     alt={""}
                   ></Image>
                 </div>
+              </div>
+              <div className="grid grid-cols-3 gap-1 md:gap-10 justify-center items-center pt-2">
+                <div className="items-center flex justify-center">
+                  <Image src={yoga6} width={100} height={100} alt={""}></Image>
+                </div>
                 <div className="items-center flex justify-center">
                   <Image
                     src={lifetimelogo}
+                    width={100}
+                    height={100}
+                    alt={""}
+                  ></Image>
+                </div>
+                <div className="items-center flex justify-center">
+                  <Image
+                    src={babelogo}
                     width={100}
                     height={100}
                     alt={""}
