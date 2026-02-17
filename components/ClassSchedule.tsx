@@ -178,7 +178,7 @@ export default function ClassSchedule() {
       acc[cls.day].push(cls);
       return acc;
     },
-    {}
+    {},
   );
 
   return (
@@ -322,7 +322,7 @@ export default function ClassSchedule() {
           </p>
           <ContactModal
             style={
-              "inline-block bg-primary text-white px-6 py-2 rounded-full hover:opacity-80 transition"
+              "inline-block bg-primary text-white px-6 py-2 rounded-full hover:opacity-80 transition hover:cursor-pointer"
             }
             text={"Inquire Here"}
           />

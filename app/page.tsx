@@ -65,7 +65,7 @@ function AboveTheFold() {
               </a>
               <ContactModal
                 style={
-                  "border border-primary text-primary px-6 py-3 z-1 rounded-full font-body font-medium hover:bg-primary hover:text-light transition"
+                  "border border-primary text-primary px-6 py-3 z-1 rounded-full font-body font-medium hover:bg-primary hover:text-light transition hover:cursor-pointer"
                 }
                 text={"Contact"}
               />

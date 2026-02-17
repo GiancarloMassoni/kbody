@@ -20,7 +20,7 @@ export default function ContactModal(contactModalProps: ContactModalProps) {
       {/* Modal */}
       {open && (
         <div
-          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 font-body"
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 font-body "
           onClick={() => setOpen(false)}
         >
           <div
@@ -30,7 +30,7 @@ export default function ContactModal(contactModalProps: ContactModalProps) {
             {/* Close button */}
             <button
               onClick={() => setOpen(false)}
-              className="absolute top-3 right-3 text-xl"
+              className="absolute top-3 right-3 text-xl hover:cursor-pointer"
             >
               &times;
             </button>
@@ -88,6 +88,16 @@ export default function ContactModal(contactModalProps: ContactModalProps) {
               </div>
 
               <div>
+                <label className="block text-sm text-left">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  className="w-full p-2 border-gray-300 border rounded-lg"
+                />
+              </div>
+
+              <div>
                 <label className="block text-sm text-left">Inquiry Type</label>
                 <select
                   name="inquiry"
@@ -112,7 +122,7 @@ export default function ContactModal(contactModalProps: ContactModalProps) {
 
               <button
                 type="submit"
-                className="w-full bg-primary text-white py-2 rounded-xl hover:bg-accent transition"
+                className="w-full bg-primary text-white py-2 rounded-xl hover:bg-accent transition hover:cursor-pointer"
               >
                 Send Message
               </button>
