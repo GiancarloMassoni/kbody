@@ -3,7 +3,7 @@
 A modern, responsive website built for **Kaitlin Brubaker** to showcase training services, programs, and connect with potential clients.
 
 ## 🌐 Live Demo
-👉 *[https://www.katebrubaker.com/]*
+👉 *https://www.katebrubaker.com/*
 
 ---
 
