@@ -52,5 +52,20 @@ kbody/
 ├── next.config.ts
 ├── tsconfig.json
 └── package.json
+```
 
+## 🛠️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/GiancarloMassoni/kbody.git
+
+# Navigate into the project
+cd kbody
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 
